@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bg.jpg)no-repeat center;
+    background-size: cover;
+    backdrop-filter: blur(30px);
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 0 5em;
+}
+.pricing-card{
+    height: 620px;
+    width: 400px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    background-color: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(30px);
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 34px;
+}
+.rate i{
+    color: gold;
+    transition: 0.3s ease-in-out;
+}
+.rate i:hover{
+    text-shadow: 0 0 25px gold,
+                  0 0 50px gold;
+}
+ul{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 1em;
+    gap: 1.3em;
+    font-size: 18px;
+    font-weight: 500;
+}
+hr{
+    height: 3px;
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 250px;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+ul li{
+    display: flex;
+    align-items: center;
+}
+#check{
+    color: rgb(0, 255, 221);
+    text-shadow: 0 0 25px rgb(0, 255, 221);
+    font-size: 32px;
+    margin-right: 10px;
+}
+#cross{
+    color: rgba(255, 0, 0, 0.753);
+    text-shadow: 0 0 25px rgba(255, 0, 0, 0.822);
+    font-size: 32px;
+    margin-right: 10px;
+}
+button{
+    background-color: transparent;
+    border: 3px solid white ;
+    color: white;
+    border-radius: 1em;
+    padding: 15px 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background: white;
+    color: black;
+    
+}
+span{
+    font-size: 42px;
+    font-weight: 700;
+}
+.pricing{
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+@media(max-width:1185px){
+    .container{
+        flex-direction: column;
+        margin: 3em 5em;
+    }
+}
